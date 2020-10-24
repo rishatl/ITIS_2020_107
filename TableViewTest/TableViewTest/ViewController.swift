@@ -143,16 +143,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 //        }
 //    }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        tableView.deselectRow(at: indexPath, animated: true)
-//
-//        switch indexPath.section {
-//        case 3:
-//            selectImage(at: indexPath.row)
-//        default:
-//            break
-//        }
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+
+        switch indexPath.section {
+        case 3:
+            selectImage(at: indexPath.row)
+        default:
+            break
+        }
+    }
     
     // MARK: - Helpers
     
